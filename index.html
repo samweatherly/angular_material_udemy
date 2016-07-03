@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ngClassifieds</title>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="ngClassifieds" ng-controller="classifiedsCtrl">
+
+    <!--<input type="text" placeholder="Enter your name" ng-model="name.first">-->
+    <!--<h1>{{ name.first + ' ' + name.last }}</h1>-->
+    <!--<hello-world></hello-world>-->
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <p><strong>ngCLassifieds</strong></p>
+            <md-button>
+                <md-icon class="mdi mdi-plus-circle"></md-icon>
+                New Classified
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="md-padding" layout="row" layout-wrap>
+        <md-card flex="33">
+            <img src="http://www.louisianasportsman.com/classifieds/pics/p1358549934434943.jpg">
+            <md-card-content>
+                <div class="classified-info">
+                    <h2 class="md-title">First Item</h2>
+                    <h3>$1,000,000</h3>
+                    <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ip</p>
+                </div>
+            </md-card-content>
+        </md-card>
+    </md-content>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="components/classifieds.ctr.js"></script>
+</body>
+</html>
